@@ -63,7 +63,8 @@ img {
 
 .nav,
 .banner-section,
-.main-content {
+.main-content,
+.footer {
     max-width: 1240px;
     margin: 0 auto
 }
@@ -231,7 +232,18 @@ img {
     width: 150px;
 }
 
+/* footer section styles */
+.footer-info {
+    margin: 130px auto 215px;
+    padding: 39px 0 38px;
+    background: #FFF4E7;
+    border-radius: 8px;
+}
 
+.footer-title {
+    font-size: 20px;
+    color: #424242;
+}
 
 
 
@@ -329,4 +341,14 @@ img {
         row-gap: 50px;
     }
 
+    /* footer section styles */
+    .footer-info {
+        margin: 50px 20px 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
 }
