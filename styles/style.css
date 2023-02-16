@@ -26,7 +26,8 @@ h6 {
     color: #131313;
 }
 
-p {
+p,
+label {
     color: #727272;
     line-height: 26px;
 }
@@ -78,7 +79,8 @@ img {
 .single-fact,
 .sponsors,
 .sponsor-info,
-.sponsor-brands {
+.sponsor-brands,
+.contact-form {
     display: flex;
 }
 
@@ -89,7 +91,8 @@ img {
 .single-fact,
 .sponsors,
 .sponsor-info,
-.sponsor-brands {
+.sponsor-brands,
+.contact-form {
     align-items: center;
 }
 
@@ -97,7 +100,8 @@ img {
 .banner-info,
 .single-fact,
 .sponsors,
-.sponsor-info {
+.sponsor-info,
+.contact-form {
     flex-direction: column;
     justify-content: center;
 }
@@ -245,9 +249,43 @@ img {
     color: #424242;
 }
 
+/* form section styles */
+.form {
+    margin-top: 150px;
+}
 
+.contact-form-description {
+    width: 65%;
+}
 
+.contact-form-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    margin: 100px 0 50px;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
 
+label {
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #CBD6E2;
+    border-radius: 3px;
+    width: 230px;
+    color: #33475B;
+    margin-top: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #72B7EE;
+}
 
 
 
@@ -339,6 +377,16 @@ img {
 
     .sponsor-brands {
         row-gap: 50px;
+    }
+
+    /* form section styles */
+    .contact-form-inputs {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 70px;
+    }
+
+    .contact-form>.primary-btn {
+        margin-left: -130px;
     }
 
     /* footer section styles */
