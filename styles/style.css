@@ -38,6 +38,11 @@ li {
     list-style: none;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
 .center {
     text-align: center;
 }
@@ -56,7 +61,8 @@ li {
 }
 
 .nav,
-.banner-section {
+.banner-section,
+.main-content {
     max-width: 1240px;
     margin: 0 auto
 }
@@ -64,13 +70,15 @@ li {
 .nav,
 .nav ul,
 .banner-section,
-.banner-info {
+.banner-info,
+.features {
     display: flex;
 }
 
 .nav,
 .banner-section,
-.banner-info {
+.banner-info,
+.features {
     align-items: center;
 }
 
@@ -81,7 +89,7 @@ li {
 }
 
 .primary-btn {
-    background: #FF900E;
+    background: var(--primary-color);
     border-radius: 8px;
     margin-top: 32px;
     font-weight: 600;
@@ -120,7 +128,31 @@ li {
     width: 100%;
 }
 
+/* features section styles */
+.features {
+    column-gap: 70px;
+    padding: 85px 60px 0;
+}
 
+.feature-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature-gallery>div {
+    width: 342px;
+    height: 342px;
+}
+
+.feature-title span:first-child {
+    color: #727272;
+    font-weight: 500;
+}
+
+.feature-title span:last-child {
+    color: var(--primary-color);
+}
 
 
 
@@ -141,7 +173,9 @@ li {
     }
 
     .nav,
-    .nav ul {
+    .nav ul,
+    .features,
+    .feature-info {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -164,6 +198,22 @@ li {
     .banner-info {
         margin: 30px 0 0;
         padding: 0 40px;
+    }
+
+    /* features section styles */
+    .features {
+        row-gap: 35px;
+        padding: 85px 40px 0;
+    }
+
+    .feature-gallery {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+
+    .feature-info {
+        display: flex;
+        text-align: center;
     }
 
 }
