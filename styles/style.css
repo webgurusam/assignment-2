@@ -1,0 +1,13 @@
+/* google fonts */
+
+
+/* common styles or, utilities */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1240px;
+    margin: 0 auto;
+}
