@@ -1,5 +1,5 @@
 /* google fonts */
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 /* common styles or, utilities */
 * {
@@ -8,10 +8,116 @@
 }
 
 body {
-    max-width: 1240px;
-    margin: 0 auto;
+    font-family: 'Work Sans', sans-serif;
 }
 
-h2 {
-    color: rebeccapurple;
+:root {
+    --primary-color: #FF900E;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.my-130 {
+    margin: 130px 0 !important;
+}
+
+.header {
+    background: rgba(255, 144, 14, 0.1);
+}
+
+.nav {
+    max-width: 1240px;
+    margin: 0 auto
+}
+
+.nav,
+.nav ul {
+    display: flex;
+}
+
+.nav {
+    align-items: center;
+}
+
+.sec-description {
+    color: #727272;
+}
+
+.primary-btn {
+    background-color: aqua;
+}
+
+/* header section styles */
+
+
+.nav {
+    justify-content: space-between;
+    padding: 50px 0 100px;
+}
+
+.nav ul {
+    column-gap: 50px;
+}
+
+.nav ul li a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive layout styles */
+
+/* styles for mobile layout */
+@media screen and (max-width: 576px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 30px;
+    }
+
+    .nav,
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav {
+        padding: 25px 0 50px;
+        row-gap: 30px;
+    }
+
+    .nav ul {
+        row-gap: 25px;
+    }
 }
